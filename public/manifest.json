@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Placeit",
+  "name": "Placeit by envato",
+  "description": "Get unlimited downloads on all our 92K templates! You can make a logo, video, mockup, flyer, business card and social media image in seconds right from your browser.",
+  "start_url": "https://placeit.net/",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,7 +20,6 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
