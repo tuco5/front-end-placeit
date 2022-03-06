@@ -1,0 +1,33 @@
+@import '../../sass/variables';
+
+.nav-dropdown {
+  position: relative;
+
+  &:hover &__box {
+    opacity: 1;
+  }
+
+  &__item {
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 3.9rem;
+    color: $color-white;
+    font-size: 1.8rem;
+  }
+
+  &__arrow {
+    height: 0.6rem;
+    width: 0.8rem;
+    margin: 0 0 0.4rem 0.5rem;
+  }
+
+  &__box {
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    background-color: $color-dropdown-inactive;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+}
