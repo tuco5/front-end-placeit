@@ -1,0 +1,22 @@
+@import '../../../sass/variables';
+
+.subcategories {
+  &__item {
+    min-width: 19.5rem;
+    padding: 0 3rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    writing-mode: horizontal-tb;
+
+    &:hover {
+      font-weight: 800;
+    }
+  }
+
+  &__link {
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+  }
+}

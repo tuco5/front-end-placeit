@@ -1,10 +1,11 @@
-@import '../../sass/variables';
+@import '../../../sass/variables';
 
-.nav-dropdown {
+.nav-categories {
   position: relative;
 
   &:hover &__box {
     opacity: 1;
+    display: flex;
   }
 
   &__item {
@@ -23,11 +24,7 @@
 
   &__box {
     position: absolute;
-    height: max-content;
-    width: max-content;
-    background-color: $color-dropdown-inactive;
-    border-radius: 4px;
     opacity: 0;
-    transition: all 0.4s;
+    display: none;
   }
 }
