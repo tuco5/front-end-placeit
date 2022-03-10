@@ -1,0 +1,12 @@
+// DRY principle aplied on after and before pseudo selector on pricing button.
+@mixin shineEfect($translateX) {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 15.5rem;
+  width: 5rem;
+  top: -5rem;
+  opacity: 0;
+  transform: rotate(35deg) translateX($translateX);
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}

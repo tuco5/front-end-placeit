@@ -179,27 +179,6 @@ const NAV_ITEMS = [
           },
         ],
       },
-      {
-        id: 81,
-        label: 'lo que sea',
-        subCategories: [
-          {
-            id: 231,
-            label: 'book covers',
-            path: '/book-cover-designs',
-          },
-          {
-            id: 241,
-            label: 'business cards',
-            path: '/online-business-card-maker',
-          },
-          {
-            id: 251,
-            label: 'flyers',
-            path: '/flyer-templates',
-          },
-        ],
-      },
     ],
   },
   {

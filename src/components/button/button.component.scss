@@ -1,0 +1,66 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.button {
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: inherit;
+  padding: 0.7rem 2rem;
+  margin-right: 1.3rem;
+  border: none;
+  border-radius: $border-radius-button;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__login-signup {
+    color: inherit;
+    background-color: inherit;
+
+    &:hover {
+      color: $color-light-gray;
+    }
+  }
+
+  &__pricing {
+    color: $color-white;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-purple-dark,
+      $color-purple-light
+    );
+
+    // DRY principle aplied on after and before pseudo selector on pricing button.
+    @mixin shineEfect($translateX) {
+      content: '';
+      position: absolute;
+      background-color: white;
+      height: 15.5rem;
+      width: 5rem;
+      top: -5rem;
+      opacity: 0;
+      transform: rotate(35deg) translateX($translateX);
+      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &::after {
+      @include shineEfect(-100%);
+    }
+
+    &::before {
+      @include shineEfect(-50%);
+    }
+
+    &:hover {
+      &::after {
+        transform: rotate(35deg) translateX(200%);
+        opacity: 0.5;
+      }
+
+      &::before {
+        transform: rotate(35deg) translateX(170%);
+        opacity: 0.5;
+      }
+    }
+  }
+}
